@@ -1,0 +1,9 @@
+URL: https://google.com
+HTTPS: True
+IP: None
+Suspicious Words: False
+Long URL: False
+@ Symbol: False
+Status Code: 200
+Risk Score: 0
+Result: ✅ Likely Safe
