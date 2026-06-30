@@ -34,21 +34,21 @@ Each check contributes to a cumulative **risk score**, which determines the fina
 
 ## 📊 Risk Scoring System
 
-| Check                | Points |
-|-----------------------|--------|
-| Missing HTTPS          | +2 |
-| IP-based URL            | +3 |
-| Suspicious keywords     | +2 |
-| Long URL                 | +1 |
-| "@" symbol               | +2 |
+| Check               | Points |
+|----------------------|:------:|
+| Missing HTTPS         | +2 |
+| IP-based URL           | +3 |
+| Suspicious keywords    | +2 |
+| Long URL                | +1 |
+| "@" symbol              | +2 |
 
 ### Risk Interpretation
 
-| Score Range | Classification |
-|-------------|-----------------|
-| 0 – 2  | ✅ Safe |
-| 3 – 5  | ⚠️ Suspicious |
-| 6+     | 🚨 High Risk Phishing Site |
+| Score Range | Classification              |
+|:-----------:|------------------------------|
+| 0 – 2       | ✅ Safe                      |
+| 3 – 5       | ⚠️ Suspicious                |
+| 6+          | 🚨 High Risk Phishing Site   |
 
 ---
 
@@ -95,7 +95,6 @@ pip install requests
 
 ```
 🔍 Analysis Result:
-
 HTTPS:             ❌ Not Secure
 IP Address URL:    ⚠️ Suspicious
 Suspicious Words:  ⚠️ Found
@@ -104,7 +103,7 @@ Long URL:          ⚠️ Yes
 Status Code:       200
 
 🔐 Risk Score: 7
-Result: 🚨 High Risk Phishing Site
+Result: 🚨 High-Risk Phishing Site
 ```
 
 ---
@@ -113,21 +112,40 @@ Result: 🚨 High Risk Phishing Site
 
 ```
 phishing-detection-tool/
-│
-├── detector.py
-├── README.md
-├── requirements.txt
-└── report.txt
+├── detector.py        # Main script — runs URL analysis and risk scoring
+├── requirements.txt   # Python dependencies
+├── report.txt          # Generated analysis report
+└── README.md
 ```
 
 ---
 
-## 👨‍💻 Author
+## 🧭 Roadmap
 
-**Arya Chavan**
+Potential future improvements:
+
+- Bulk URL scanning from a file
+- Domain age / WHOIS lookup integration
+- SSL certificate validation
+- Export reports in JSON/CSV format
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome. Feel free to open an issue or submit a pull request.
 
 ---
 
 ## 📌 Disclaimer
 
 This tool is intended for **educational purposes only**. It is designed to help understand the fundamentals of phishing detection techniques in cybersecurity and should not be relied upon as a sole defense mechanism against phishing attacks.
+
+---
+
+## 👨‍💻 Author
+
+**Arya Chavan**
+Cybersecurity Enthusiast
+
+---
